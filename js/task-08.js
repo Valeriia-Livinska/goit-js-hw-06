@@ -3,8 +3,8 @@ const formEl = document.querySelector(".login-form");
 const handleFormSubmit = (event) => {
   event.preventDefault();
 
-  const email = formEl.elements.email.value;
-  const password = formEl.elements.password.value;
+  const email = event.currentTarget.elements.email.value;
+  const password = event.currentTarget.elements.password.value;
 
   if (email === "" || password === "") {
     alert("Внимание! Все поля формы должны быть заполнены!");
